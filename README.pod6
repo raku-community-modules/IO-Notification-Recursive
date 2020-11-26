@@ -14,7 +14,7 @@
 
 =DESCRIPTION
 
-Perl 6 comes with a way to watch a file or directory for changes called
+Raku comes with a way to watch a file or directory for changes called
 IO::Notification.watch-path().  As files are changed or created or removed
 from a directory you are watching, these changes are registered on the
 C<Supply> created by .watch-path(). However, if any files are changed or
