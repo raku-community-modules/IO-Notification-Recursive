@@ -11,7 +11,7 @@
     "authors" : ["Jonathan Scott Duff <duff@pobox.com>"],
     "support" : {
         "email": "duff@pobox.com",
-        "source": "https://github.com/perlpilot/p6-IO-Notification-Recursive.git",
-        "bugtracker" : "https://github.com/perlpilot/p6-IO-Notification-Recursive/issues"
+        "source": "https://github.com/raku-community-modules/IO-Notification-Recursive.git",
+        "bugtracker" : "https://github.com/raku-community-modules/IO-Notification-Recursive/issues"
     }
 }
