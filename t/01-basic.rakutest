@@ -8,7 +8,9 @@ mkdir $dir;
 my $file := $dir.child("test-file");
 
 watch-recursive($dir).tap: {
-    is .path, $file, "did we get an event for $file";
+    if .path eq $file {
+        pass "we saw the change on $file";
+    }
 }
 
 sleep 2;  # give it a little time
