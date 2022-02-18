@@ -8,8 +8,10 @@ mkdir $dir;
 my $file := $dir.child("test-file");
 
 watch-recursive($dir).tap: {
+    state $seen;
     if .path eq $file {
-        pass "we saw the change on $file";
+        pass "we saw the change on $file"
+          unless $seen++;
     }
 }
 
