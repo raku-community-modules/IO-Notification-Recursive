@@ -1,6 +1,8 @@
 Revision history for IO-Notification-Recursive
 
 {{$NEXT}}
+
+0.0.2  2022-02-18T19:04:05+01:00
     - First version in the zef ecosystem
     - Add a *very* basic test
 

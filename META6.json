@@ -22,7 +22,11 @@
     "bugtracker": "https://github.com/raku-community-modules/IO-Notification-Recursive/issues",
     "source": "https://github.com/raku-community-modules/IO-Notification-Recursive.git"
   },
-  "tags": [ "IO", "WATCH", "SUPPLY", "WHENEVER"
+  "tags": [
+    "IO",
+    "WATCH",
+    "SUPPLY",
+    "WHENEVER"
   ],
   "test-depends": [
   ],
