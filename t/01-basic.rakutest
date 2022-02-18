@@ -1,0 +1,23 @@
+use Test;
+use IO::Notification::Recursive;
+
+plan 1;
+
+my $dir := $*TMPDIR.child("IONR");
+mkdir $dir;
+my $file := $dir.child("test-file");
+
+watch-recursive($dir).tap: {
+    is .path, $file, "did we get an event for $file";
+}
+
+sleep 2;  # give it a little time
+$file.spurt: "stuff";
+sleep 2;  # give it a little time again
+
+END {
+    .unlink with $file;
+    .rmdir  with $dir;
+}
+
+# vim: expandtab shiftwidth=4

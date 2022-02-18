@@ -1,0 +1,8 @@
+Revision history for IO-Notification-Recursive
+
+{{$NEXT}}
+    - First version in the zef ecosystem
+    - Add a *very* basic test
+
+0.0.1  2015-08-30     
+    - Initial version

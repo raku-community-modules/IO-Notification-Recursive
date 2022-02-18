@@ -1,17 +1,30 @@
 {
-    "perl" : "6.*",
-    "name" : "IO::Notification::Recursive",
-    "version" : "0.0.1",
-    "license" : "Artistic-2.0",
-    "description" : "Recursively watch a directory and any subdirectories",
-    "provides" : {
-        "IO::Notification::Recursive" : "lib/IO/Notification/Recursive.pm"
-    },
-    "depends" : [ "File::Find" ],
-    "authors" : ["Jonathan Scott Duff <duff@pobox.com>"],
-    "support" : {
-        "email": "duff@pobox.com",
-        "source": "https://github.com/raku-community-modules/IO-Notification-Recursive.git",
-        "bugtracker" : "https://github.com/raku-community-modules/IO-Notification-Recursive/issues"
-    }
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Jonathan Scott Duff"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+    "File::Find"
+  ],
+  "description": "Recursively watch a directory and any subdirectories",
+  "license": "Artistic-2.0",
+  "name": "IO::Notification::Recursive",
+  "perl": "6.*",
+  "provides": {
+    "IO::Notification::Recursive": "lib/IO/Notification/Recursive.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/IO-Notification-Recursive.git",
+  "support": {
+    "bugtracker": "https://github.com/raku-community-modules/IO-Notification-Recursive/issues",
+    "source": "https://github.com/raku-community-modules/IO-Notification-Recursive.git"
+  },
+  "tags": [ "IO", "WATCH", "SUPPLY", "WHENEVER"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.2"
 }
