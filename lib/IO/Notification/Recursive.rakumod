@@ -9,7 +9,7 @@ sub watch-recursive(IO(Cool) $start, Bool :$update) is export {
         my sub watch-it(IO::Path:D $io) {
             whenever $io.watch -> $e {
                 if $update {
-                    if $e.event ~~ FileRenamed && $e.path.d {
+                    if $e.event ~~ FileRenamed && $e.path.IO.d {
                         watch-it($_) for find-dirs $e.path;
                     }
                 }
